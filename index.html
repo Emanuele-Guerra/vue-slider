@@ -10,14 +10,25 @@
 <body>
     <div id="app">
         <div>
+            <img :src="slides.immagine" alt="">
+        </div>
+        <div class="container">
+            
             <h1>{{ slides[slideNumber].titolo }}</h1>
             <p>{{ slides[slideNumber].titolo }}</p>
-            <img :src="slides[slideNumber].immagine" alt="">
+            <img class="img" :src="slides[slideNumber].immagine" alt="">
+            <div class="count">{{slideNumber +1}}</div>
+            <div>
+
+            </div>
         </div>
-        <div>
+        <div class="container2">
             <button @click="back()">back</button>
             <button @click="next()">next</button>
+        
         </div>
+            
+            
         
         
         

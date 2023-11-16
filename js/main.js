@@ -38,7 +38,7 @@ const opzioni = {
             if(this.slideNumber > 0){
                 this.slideNumber--
             }else{
-                this.slideNumber = 0
+                this.slideNumber = this.slides.length -1
             }
 
 
