@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div id="app">
+        <div>
+            <h1>{{ slides[slideNumber].titolo }}</h1>
+            <p>{{ slides[slideNumber].titolo }}</p>
+            <img :src="slides[slideNumber].immagine" alt="">
+        </div>
+        <div>
+            <button @click="back()">back</button>
+            <button @click="next()">next</button>
+        </div>
+        
+        
+        
+        
+        
+        
+    </div>
+    <script src="js/main.js"></script>
+</body>
+</html>
